@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from './components/NavrBar'
+import HomePage from './pages/HomePage'
 function App() {
 
   return (
     <>
-    <Navbar />
    
+   <HomePage />
     </>
   )
 }
