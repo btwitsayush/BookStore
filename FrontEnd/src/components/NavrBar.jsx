@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Navbar() {
   const NavItems = ["Home", "Buy", "About", "Contact"];
 
+  const[sticky,setSticky]=useState(false);
+
+  useEffect(()=>{
+    const handleScroll=()=>{
+      //changing navbar bg if user scrolls the window 
+      if(window.scrollY>100){
+        setSticky(true);
+      }
+      else{
+        setSticky(false);
+      }
+    }
+    // calling the handleScroll function when user scolls 
+    window.addEventListener('scroll',handleScroll);
+
+    // returning a cleanup function to remove the event listner from dom(unmount) 
+    // cleanup function isn't mandatory it's for the optimization
+    return ()=>{
+      window.removeEventListener('scroll',handleScroll);
+    }
+  },[])
+
   return (
     <>
-    <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
-      <div className="navbar bg-base-100">
+    <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50
+    ${sticky?"sticky-navbar shadow-md bg-base-300 duration-300 transition-all ease-in-out":""}`}>
+      <div className="navbar">
         <div className="navbar-start">
           {/* hamburger starts */}
           <div className="dropdown">
@@ -108,7 +131,7 @@ function Navbar() {
           </label>
 
           <div className="">
-            <a className="bg-black text-white px-3 py-2 rounded-md cursor-pointer mr-8 no-underline">
+            <a className="bg-black text-white px-3 py-2 rounded-md cursor-pointer no-underline">
               Login
             </a>
           </div>
