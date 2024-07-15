@@ -5,7 +5,7 @@ function Card() {
   return (
     <>
       {list.map((item) => (
-        <div key={item.id} className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-full hover:scale-90 duration-200">
+        <div key={item.id} className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-full hover:scale-90 duration-200 dark:bg-slate-900 dark:text-white">
           <div className="relative  overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-96">
             <img src={item.img} alt="card-image" className="object-cover w-full h-full" />
           </div>
@@ -18,7 +18,7 @@ function Card() {
                 RS:{item.price}
               </p>
             </div>
-            <p className="block font-sans text-l antialiased font-normal leading-normal text-gray-700 opacity-75">
+            <p className="block font-sans text-l antialiased font-normal leading-normal text-gray-700 opacity-75  dark:text-white dark:opacity-100">
               {item.title}
             </p>
           </div>

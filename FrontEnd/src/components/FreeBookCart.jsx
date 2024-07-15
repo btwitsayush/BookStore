@@ -47,7 +47,7 @@ function FreeBookCart() {
   return (
 
     <>
-    <div className="z-10">
+    <div className="z-10 dark:bg-slate-900 dark:text-white">
       <section className="max-w-screen-2xl container mx-auto md:px-20 px-4 ml-4">
         <div>
           <h1 className="font-semibold text-xl pb-2">Explore Free Books</h1>
@@ -66,7 +66,7 @@ function FreeBookCart() {
   <Slider {...settings} className="lg:w-11/12 w-4/5 ml-8">
     {freeBooks.map((elem) => {
       return (
-        <div className="card md:w-2/4 md:px-6 h-4/5 hover:scale-105 duration-200" key={elem.id}>
+        <div className="card md:w-2/4 md:px-6 h-4/5 hover:scale-90 duration-200" key={elem.id}>
           <figure>
             <img
               src={elem.img}
@@ -82,7 +82,7 @@ function FreeBookCart() {
             <p className="text-base font-semibold">{elem.title}</p>
             <div className="card-actions flex justify-between items-center mt-auto mb-2 px-2">
               <div className="text-left">Rs: {elem.price}</div>
-              <button className="btn btn-outline ">Download</button>
+              <button className="btn btn-outline dark:bg-base-300">Download</button>
             </div>
           </div>
         </div>
