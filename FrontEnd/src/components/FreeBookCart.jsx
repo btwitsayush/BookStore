@@ -66,15 +66,15 @@ function FreeBookCart() {
   <Slider {...settings} className="lg:w-11/12 w-4/5 ml-8">
     {freeBooks.map((elem) => {
       return (
-        <div className="card md:w-2/4 md:px-6 md:ml-3 lg:ml-6 h-4/5" key={elem.id}>
+        <div className="card md:w-2/4 md:px-6 h-4/5" key={elem.id}>
           <figure>
             <img
               src={elem.img}
               alt={elem.name}
-              className="object-cover h-56 w-full"  
+              className="object-cover h-56 w-full border-t-4 border-l-4 border-r-4 rounded-t-xl"  
             />
           </figure>
-          <div className="card-body">
+          <div className="card-body  border-l-4 border-r-4 border-b-4 rounded-b-xl">
             <h4 className="card-title text-lg">
               {elem.name}
               <div className="badge badge-primary">NEW</div>

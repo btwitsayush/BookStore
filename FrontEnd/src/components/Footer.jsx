@@ -3,8 +3,9 @@ import React from 'react'
 function Footer() {
   return (
     <>
-    <hr />
-    <footer className="footer footer-center text-base-content rounded p-10">
+    <footer className='my-5'>
+     <hr />
+    <div className="footer footer-center text-base-content rounded p-10">
   <nav className="grid grid-flow-col gap-4">
     <a className="link link-hover">Home</a>
     <a className="link link-hover">Buy</a>
@@ -51,8 +52,8 @@ function Footer() {
   <aside>
     <p>Copyright © ${new Date().getFullYear()} - All right reserved by Ayush Srivastava</p>
   </aside>
+</div>
 </footer>
-    
     </>
   )
 }
