@@ -66,7 +66,7 @@ function FreeBookCart() {
   <Slider {...settings} className="lg:w-11/12 w-4/5 ml-8">
     {freeBooks.map((elem) => {
       return (
-        <div className="card md:w-2/4 md:px-6 h-4/5" key={elem.id}>
+        <div className="card md:w-2/4 md:px-6 h-4/5 hover:scale-105 duration-200" key={elem.id}>
           <figure>
             <img
               src={elem.img}
