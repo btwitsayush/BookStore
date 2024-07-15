@@ -46,5 +46,53 @@
         "price": 299,
         "category": "fiction-book",
         "img": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1720956317~exp=1720959917~hmac=73fad9616489144f86348de6c91dd0a05e179bc86e6f24316f48e001cee2ecc4&w=740"
+    },
+    {
+        "id": 7,
+        "name": "Story Book",
+        "title": "The Adventures of Peter Rabbit",
+        "price": 299,
+        "category": "free",
+        "img": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1720956317~exp=1720959917~hmac=73fad9616489144f86348de6c91dd0a05e179bc86e6f24316f48e001cee2ecc4&w=740"
+    },
+    {
+        "id": 8,
+        "name": "Story Book",
+        "title": "Alice's Adventures in Wonderland",
+        "price": 299,
+        "category": "free",
+        "img": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1720956317~exp=1720959917~hmac=73fad9616489144f86348de6c91dd0a05e179bc86e6f24316f48e001cee2ecc4&w=740"
+    },
+    {
+        "id": 9,
+        "name": "Story Book",
+        "title": "Harry Potter and the Philosopher's Stone",
+        "price": 299,
+        "category": "free",
+        "img": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1720956317~exp=1720959917~hmac=73fad9616489144f86348de6c91dd0a05e179bc86e6f24316f48e001cee2ecc4&w=740"
+    },
+    {
+        "id": 10,
+        "name": "Story Book",
+        "title": "Pride and Prejudice",
+        "price": 299,
+        "category": "free",
+        "img": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1720956317~exp=1720959917~hmac=73fad9616489144f86348de6c91dd0a05e179bc86e6f24316f48e001cee2ecc4&w=740"
+    },
+    {
+        "id": 11,
+        "name": "Story Book",
+        "title": "To Kill a Mockingbird",
+        "price": 299,
+        "category": "adventure-book",
+        "img": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1720956317~exp=1720959917~hmac=73fad9616489144f86348de6c91dd0a05e179bc86e6f24316f48e001cee2ecc4&w=740"
+    },
+    {
+        "id": 12,
+        "name": "Story Book",
+        "title": "The Great Gatsby",
+        "price": 299,
+        "category": "fiction-book",
+        "img": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1720956317~exp=1720959917~hmac=73fad9616489144f86348de6c91dd0a05e179bc86e6f24316f48e001cee2ecc4&w=740"
     }
 ]
