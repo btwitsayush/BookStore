@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const NavItems = ["Home", "Buy", "About", "Contact"];
@@ -54,13 +55,13 @@ function Navbar() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               {NavItems.map((elem, index) => (
-                <a
+                <Link
                   key={index}
-                  href={`/${elem.toLowerCase()}`}
+                  to={`/${elem.toLowerCase()}`}
                   className="block px-4 py-2 text-sm"
                 >
                   {elem}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -72,13 +73,13 @@ function Navbar() {
           <div className="navbar-center hidden lg:flex">
             <div className="flex lg:space-x-8 space-x-4">
               {NavItems.map((elem, index) => (
-                <a
+                <Link
                   key={index}
-                  href={`/${elem.toLowerCase()}`}
+                  to={`/${elem.toLowerCase()}`}
                   className="text-base no-underline"
                 >
                   {elem}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
