@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Login from "../pages/Login";
 
 function Navbar() {
   const NavItems = ["Home", "Buy", "About", "Contact"];
@@ -157,9 +158,13 @@ function Navbar() {
           </label>
 
           <div className="">
-            <a className="bg-black text-white px-3 py-2 rounded-md cursor-pointer no-underline">
+           
+            <a className="bg-black text-white px-3 py-2 rounded-md cursor-pointer no-underline"
+            onClick={()=>document.getElementById("my_modal_3").showModal()}
+            >
               Login
             </a>
+            <Login />
           </div>
         </div>
       </div>
