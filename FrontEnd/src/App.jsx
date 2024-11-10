@@ -3,7 +3,6 @@ import {Route, Routes} from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import Buy from './pages/Buy'
 import Signup from './pages/SignUp'
-// import Login from './pages/Login'
 function App() {
 
   return (
@@ -12,11 +11,12 @@ function App() {
    {/* <HomePage /> */}
    <div className='dark:bg-slate-900 dark:text-white'>
    <Routes>
+    
     <Route path='/' element={<HomePage />} />
     <Route path='/home' element={<HomePage />} />
     <Route path='/buy' element={<Buy />} />
     <Route path='/signup' element={<Signup />} />
-    {/* <Route path='/login' element={<Login />} /> */}
+    
 
    </Routes>
    </div>
